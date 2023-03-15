@@ -44,3 +44,13 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+" [Insert]
+nmap z, A,<Esc>
+imap z, <Esc>A,
+nmap z; A;<Esc>
+imap z; <Esc>A;
+nmap z. A.<Esc>
+imap z. <Esc>A.
+vmap S :action SurroundWith<CR>
+map zrt <Esc>hhireturn <Esc>z;
+imap zrt <Esc>hhireturn <Esc>z;

@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/syntastic'
 Plug 'jiangmiao/auto-pairs'
+Plug 'MeF0504/vim-pets'
 call plug#end()
 
 "Automatically install missing plugins on startup

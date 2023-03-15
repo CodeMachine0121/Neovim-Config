@@ -1,9 +1,9 @@
 
-source ~/AppData/Local/nvim/plug-config/plugn.vim
-source ~/AppData/Local/nvim/plug-config/NerdTree.vim
-source ~/AppData/Local/nvim/plug-config/Airline.vim
-source ~/AppData/Local/nvim/plug-config/SyntaxCheck.vim
-source ~/AppData/Local/nvim/plug-config/Edit.vim
-source ~/AppData/Local/nvim/plug-config/asyncomplete.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/plugn.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/NerdTree.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/Airline.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/SyntaxCheck.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/Edit.vim
+source ~/AppData/Local/nvim/Vundle-Plugns/asyncomplete.vim
 
 source ~/AppData/Local/nvim/lua/init.vim 
