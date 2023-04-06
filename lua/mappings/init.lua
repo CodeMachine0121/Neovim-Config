@@ -1,4 +1,3 @@
-
 function map(mode, lhs, rhs)
     local options = { noremap = true, silent }
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
@@ -70,3 +69,17 @@ map('x', 'c', "<cmd>lua require('vi-viz').vizChange()<CR>")
 -- nice to have to insert before and after
 map('x', 'ii', "<cmd>lua require('vi-viz').vizInsert()<CR>")
 map('x', 'aa', "<cmd>lua require('vi-viz').vizAppend()<CR>")
+
+-- nerd Tab
+map('n', '<C-n>', ":tabnew<CR>")
+map('n', '<C-Right>',":tabnext<CR>")
+map('n', '<C-Left>',":tabprevious<CR>")
+map('n', '<C-S-W>',":tabclose<CR>")
+
+map('i', '<C-n>', "<Esc>:tabnew<CR>")
+map('i', '<C-Right>',"<Esc>:tabnext<CR>i")
+map('i', '<C-Left>',"<Esc>:tabprevious<CR>i")
+map('i', '<C-S-W>', "<Esc>:tabclose<CR>")
+
+map('i', '<A-S-l>', "<ESC>:NvimTreeFindFileToggle<CR>")
+map('n', '<A-S-l>', ":NvimTreeFindFileToggle<CR>")
