@@ -18,7 +18,13 @@ return require'packer'.startup(function()
     use 'rafamadriz/friendly-snippets'
     -- lspkind
     use 'onsails/lspkind-nvim'
-
     -- expend selection
     use 'olambo/vi-viz'
+    -- lualine
+    use 'nvim-lualine/lualine.nvim'
+
+    --trouble
+    use {
+        'folke/trouble.nvim'
+    }
 end)

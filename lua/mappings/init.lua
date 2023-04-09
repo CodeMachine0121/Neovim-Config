@@ -79,7 +79,21 @@ map('n', '<C-S-W>',":tabclose<CR>")
 map('i', '<C-n>', "<Esc>:tabnew<CR>")
 map('i', '<C-Right>',"<Esc>:tabnext<CR>i")
 map('i', '<C-Left>',"<Esc>:tabprevious<CR>i")
-map('i', '<C-S-W>', "<Esc>:tabclose<CR>")
+map('i', '<C-S-w>', "<Esc>:tabclose<CR>")
 
 map('i', '<A-S-l>', "<ESC>:NvimTreeFindFileToggle<CR>")
 map('n', '<A-S-l>', ":NvimTreeFindFileToggle<CR>")
+
+
+-- nvim trouble
+-- jump to the next item, skipping the groups
+map('i','zn', '<cmd> lua require("trouble").next({skip_groups = true, jump = true}')
+
+map('n', '<leader>xx', '<cmd>TroubleToggle<cr>')
+map('n', '<leader>xw', '<cmd>TroubleToggle workspace_diagnostics<cr>')
+map('n', '<leader>xd', '<cmd>TroubleToggle document_diagnostics<cr>')
+map('n', '<leader>xq', '<cmd>TroubleToggle quickfix<cr>')
+map('n', '<leader>xl', '<cmd>TroubleToggle loclist<cr>')
+map('n', 'gR', '<cmd>TroubleToggle lsp_references<cr>')
+
+;ksafas

@@ -1,14 +1,14 @@
 local pluginKeys = {}
 pluginKeys.msplsp = function(mapbuf)
 -- rename
-  mapbuf('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
+  mapbuf('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
   -- code action
   mapbuf('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opt)
   -- go xx
-  mapbuf('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
+  mapbuf('n', '<F12>', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
   mapbuf('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opt)
-  mapbuf('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opt)
-  mapbuf('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opt)
+  mapbuf('n', 'gde', '<cmd>lua vim.lsp.buf.declaration()<CR>', opt)
+  mapbuf('n', '<S-F12>', '<cmd>lua vim.lsp.buf.implementation()<CR>', opt)
   mapbuf('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
   -- diagnostic
   mapbuf('n', 'go', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)

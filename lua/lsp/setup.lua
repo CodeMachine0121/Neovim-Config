@@ -7,6 +7,8 @@ lsp_installer.setup({
 -- https://github.com/williamboman/nvim-lsp-installer#available-lsps
 -- { key: 语言 value: 配置文件 }
 local servers = {
+
+    sumneko_lua= require "lsp.lua",
 }
 
 -- 自动安装 LanguageServers
